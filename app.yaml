@@ -1,0 +1,13 @@
+service: anil
+runtime: python27
+api_version: 1
+threadsafe: true
+skip_files:
+- ^(resources/.*)
+- ^(react/node_modules/.*)
+- ^(./)?.\.py[co]$
+handlers:
+- url: /stylesheets
+  static_dir: stylesheets
+- url: /.*
+  script: helloworld.application
