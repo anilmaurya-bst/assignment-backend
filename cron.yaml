@@ -1,0 +1,4 @@
+cron:
+- description: "ReScrapping Play store Apps in every 12 hours"
+  url: /get_scheduled
+  schedule: every 12 hours
